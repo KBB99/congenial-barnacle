@@ -1,15 +1,31 @@
 {
-  "name": "generative-world-mock-api",
+  "name": "@generative-world/development-scripts",
   "version": "1.0.0",
-  "description": "Mock API server for Generative World development",
+  "description": "Development scripts and mock servers for Generative World",
   "main": "mock-api-server.js",
   "scripts": {
     "start": "node mock-api-server.js",
-    "dev": "node mock-api-server.js"
+    "start:enhanced": "node enhanced-mock-api-server.js",
+    "dev": "nodemon mock-api-server.js",
+    "dev:enhanced": "nodemon enhanced-mock-api-server.js"
   },
   "dependencies": {
     "express": "^4.18.2",
     "cors": "^2.8.5",
-    "socket.io": "^4.7.2"
-  }
+    "socket.io": "^4.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mock",
+    "api",
+    "development",
+    "simulation"
+  ],
+  "author": "Generative World Team",
+  "license": "MIT"
 }
