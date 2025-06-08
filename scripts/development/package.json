@@ -1,0 +1,15 @@
+{
+  "name": "generative-world-mock-api",
+  "version": "1.0.0",
+  "description": "Mock API server for Generative World development",
+  "main": "mock-api-server.js",
+  "scripts": {
+    "start": "node mock-api-server.js",
+    "dev": "node mock-api-server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "socket.io": "^4.7.2"
+  }
+}

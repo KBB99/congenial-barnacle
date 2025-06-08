@@ -1,0 +1,47 @@
+{
+  "name": "@generative-world/llm-integration",
+  "version": "1.0.0",
+  "description": "LLM Integration Service - Amazon Bedrock integration and prompt management",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "docker:build": "docker build -t generative-world/llm-integration .",
+    "docker:run": "docker run -p 3002:3002 generative-world/llm-integration"
+  },
+  "dependencies": {
+    "@generative-world/shared": "file:../shared",
+    "@aws-sdk/client-bedrock-runtime": "^3.450.0",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "@types/express": "^4.17.17",
+    "@types/cors": "^2.8.14",
+    "@types/uuid": "^9.0.6",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "eslint": "^8.50.0",
+    "jest": "^29.7.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "llm",
+    "bedrock",
+    "ai",
+    "prompts",
+    "embeddings",
+    "cache"
+  ],
+  "author": "Generative World Team",
+  "license": "MIT"
+}
